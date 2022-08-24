@@ -55,7 +55,8 @@ main {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 4rem;}
+  padding: 4rem;
+}
 
 .scores-section,
 .add-score-section {
