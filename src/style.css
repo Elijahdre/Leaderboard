@@ -55,8 +55,7 @@ main {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
-}
+  padding: 4rem;}
 
 .scores-section,
 .add-score-section {
@@ -81,3 +80,25 @@ main {
   overflow-y: scroll;
 }
 
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+input {
+  display: block;
+  height: 4rem;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 2rem;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.status {
+  text-align: center;
+}
