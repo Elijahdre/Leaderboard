@@ -102,3 +102,31 @@ input {
 .status {
   text-align: center;
 }
+
+@media screen and (max-width: 976px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .scores-section,
+  .add-score-section {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+
+  form {
+    width: 100%;
+    gap: 1rem;
+  }
+}
