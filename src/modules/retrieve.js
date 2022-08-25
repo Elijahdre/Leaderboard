@@ -4,10 +4,12 @@ const retrieveData = (arr) => {
   arr.forEach((user) => {
     score.innerHTML += `
     <div class="score-cont flex">
-       <h2></h2>
-       <span></span>
+       <h2>${user.user}</h2>
+       <span>${user.score}</span>
      </div> 
     `
   });
   
 }
+
+export default retrieveData;
