@@ -100,6 +100,14 @@ input {
   border-radius: 5px;
 }
 
+.flex {
+  display: flex;
+}
+
+.score-cont {
+  justify-content: space-between;
+}
+
 .status {
   text-align: center;
 }
