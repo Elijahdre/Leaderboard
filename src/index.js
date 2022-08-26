@@ -6,6 +6,7 @@ const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/gam
 
 const refreshBtn = document.getElementById('refresh-btn');
 refreshBtn.addEventListener('click', () => {
+  document.querySelector('.success').classList.add('hidden');
   collectData(game);
 });
 
@@ -22,5 +23,8 @@ form.addEventListener('submit', (event) => {
   };
 
   postAPI(game, finalScore);
+
+  document.querySelector('.success').classList.remove('hidden');
+
   form.reset();
 });
