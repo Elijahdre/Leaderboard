@@ -1,15 +1,13 @@
 import './style.css';
-import collectData from './modules/refresh.js'
+import collectData from './modules/refresh.js';
 import postAPI from './modules/submit.js';
 
-const game = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2eLjh/scores/";
-
+const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2eLjh/scores/';
 
 const refreshBtn = document.getElementById('refresh-btn');
 refreshBtn.addEventListener('click', (event) => {
-  collectData(game)
+  collectData(game);
 });
-
 
 const form = document.getElementById('form');
 form.addEventListener('submit', (event) => {
@@ -21,10 +19,8 @@ form.addEventListener('submit', (event) => {
   const finalScore = {
     user: inputName,
     score: inputScore,
-};
+  };
 
-postAPI(game, finalScore)
+  postAPI(game, finalScore);
+  form.reset();
 });
-
-
-

@@ -5,6 +5,6 @@ const postAPI = async (url, data) => {
       'content-Type': 'application/json',
     },
     body: JSON.stringify(data),
-  })
-}
+  });
+};
 export default postAPI;
