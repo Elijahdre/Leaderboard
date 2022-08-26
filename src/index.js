@@ -5,7 +5,7 @@ import postAPI from './modules/submit.js';
 const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2eLjh/scores/';
 
 const refreshBtn = document.getElementById('refresh-btn');
-refreshBtn.addEventListener('click', (event) => {
+refreshBtn.addEventListener('click', () => {
   collectData(game);
 });
 
