@@ -81,6 +81,15 @@ main {
   overflow-y: scroll;
 }
 
+.score-cont {
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.score-cont:nth-of-type(2n) {
+  background-color: rgb(199, 199, 199);
+}
+
 form {
   width: 70%;
   display: flex;
@@ -104,12 +113,21 @@ input {
   display: flex;
 }
 
-.score-cont {
-  justify-content: space-between;
-}
-
 .status {
   text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin: 2rem auto 0;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 976px) {
